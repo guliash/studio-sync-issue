@@ -1,0 +1,9 @@
+rootProject.name = "ProjectB"
+include ':app'
+
+//includeBuild("../projecta/projectc") {
+//    dependencySubstitution {
+//        substitute module('projectc:superplugin') with project(':superplugin')
+//    }
+//}
+includeBuild("../projecta")

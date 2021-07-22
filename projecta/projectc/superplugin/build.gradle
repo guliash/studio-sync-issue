@@ -1,0 +1,17 @@
+plugins {
+    id 'java-gradle-plugin'
+    id("org.jetbrains.kotlin.jvm") version "1.5.10"
+}
+
+gradlePlugin {
+    plugins {
+        create {
+            id = 'com.guliash.superplugin'
+            implementationClass = 'com.guliash.superplugin.SuperPlugin'
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.10'
+}
