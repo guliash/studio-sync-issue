@@ -1,5 +1,5 @@
 rootProject.name = "ProjectA"
-include ':app'
+include ':library'
 
 includeBuild('projectc') {
     dependencySubstitution {

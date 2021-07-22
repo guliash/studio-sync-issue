@@ -6,4 +6,8 @@ include ':app'
 //        substitute module('projectc:superplugin') with project(':superplugin')
 //    }
 //}
-includeBuild("../projecta")
+includeBuild("../projecta") {
+    dependencySubstitution {
+        substitute module('com.guliash.projecta:library') with project(':library')
+    }
+}
